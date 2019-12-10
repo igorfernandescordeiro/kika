@@ -7,6 +7,12 @@ import { SearchComponent } from './search/search.component';
 import { ListComponent } from './list/list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+import {MatInputModule} from '@angular/material/input'; 
+import {MatIconModule} from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
+import {MatListModule} from '@angular/material/list'; 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +22,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatIconModule,
+    FormsModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
